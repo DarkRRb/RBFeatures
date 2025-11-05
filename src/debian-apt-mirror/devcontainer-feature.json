@@ -1,7 +1,7 @@
 {
     "name": "Debian APT mirror",
     "id": "debian-apt-mirror",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "Modify the source of Debian's APT",
     "options": {
         "https": {
@@ -23,6 +23,21 @@
             "type": "boolean",
             "default": false,
             "description": "Whether to overwrite the security source"
+        },
+        "contrib": {
+            "type": "boolean",
+            "default": true,
+            "description": "Whether to use contrib"
+        },
+        "non-free": {
+            "type": "boolean",
+            "default": true,
+            "description": "Whether to use non-free"
+        },
+        "non-free-firmware": {
+            "type": "boolean",
+            "default": true,
+            "description": "Whether to use non-free-firmware"
         }
     }
 }
