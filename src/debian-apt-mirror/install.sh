@@ -42,7 +42,7 @@ if [ "${NON_FREE_FIRMWARE}" = "true" ]; then
 fi
 
 security_host="security.debian.org"
-if [ "${SECURITY}" = "true"  ] then
+if [ "${SECURITY}" = "true"  ]; then
     security_host="${host}"
 fi
 security_url="${schema}://${security_host}/debian-security"
