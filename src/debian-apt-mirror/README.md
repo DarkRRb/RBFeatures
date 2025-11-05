@@ -17,8 +17,14 @@ Modify the source of Debian's APT
 |-----|-----|-----|-----|
 | https | Whether to use https | boolean | false |
 | host | The host of the source | string | deb.debian.org |
-| path | The path of the source | string | /debian |
+| spath | The path of the source | string | /debian |
+| update | Whether to use update source | boolean | true |
+| backports | Whether to use backports source | boolean | false |
 | security | Whether to overwrite the security source | boolean | false |
+| deb-src | Whether to use deb-src | boolean | false |
+| contrib | Whether to use contrib | boolean | true |
+| non-free | Whether to use non-free | boolean | true |
+| non-free-firmware | Whether to use non-free-firmware | boolean | true |
 
 
 
