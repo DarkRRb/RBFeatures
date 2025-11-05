@@ -1,7 +1,7 @@
 {
     "name": "Debian APT mirror",
     "id": "debian-apt-mirror",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Modify the source of Debian's APT",
     "options": {
         "https": {
@@ -24,6 +24,9 @@
             "default": false,
             "description": "Whether to overwrite the security source"
         }
+    },
+    "containerEnv": {
+        "PATH": "$PATH"
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
