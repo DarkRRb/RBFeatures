@@ -24,8 +24,5 @@
             "default": false,
             "description": "Whether to overwrite the security source"
         }
-    },
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils"
-    ]
+    }
 }
