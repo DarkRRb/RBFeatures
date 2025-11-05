@@ -28,7 +28,7 @@ if [ "${HTTPS}" = "true" ]; then
     schema="https"
 fi
 
-mirror="${schema}://${host}${spath}"
+mirror="${schema}://${HOST}${SPATH}"
 
 components="main"
 if [ "${CONTRIB}" = "true" ]; then
