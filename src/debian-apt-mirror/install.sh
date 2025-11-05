@@ -43,7 +43,7 @@ fi
 
 security_host="security.debian.org"
 if [ "${SECURITY}" = "true"  ]; then
-    security_host="${host}"
+    security_host="${HOST}"
 fi
 security_url="${schema}://${security_host}/debian-security"
 security_suite="${VERSION_CODENAME}-security"
