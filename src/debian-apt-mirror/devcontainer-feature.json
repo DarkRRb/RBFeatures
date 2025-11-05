@@ -1,7 +1,7 @@
 {
     "name": "Debian APT mirror",
     "id": "debian-apt-mirror",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "Modify the source of Debian's APT",
     "options": {
         "https": {
@@ -19,10 +19,25 @@
             "default": "/debian",
             "description": "The path of the source"
         },
+        "update": {
+            "type": "boolean",
+            "default": true,
+            "description": "Whether to use update source"
+        },
+        "backports": {
+            "type": "boolean",
+            "default": false,
+            "description": "Whether to use backports source"
+        },
         "security": {
             "type": "boolean",
             "default": false,
             "description": "Whether to overwrite the security source"
+        },
+        "deb-src": {
+            "type": "boolean",
+            "default": false,
+            "description": "Whether to use deb-src"
         },
         "contrib": {
             "type": "boolean",
