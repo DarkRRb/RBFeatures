@@ -74,6 +74,6 @@ rm -rf /etc/apt/sources.list.d/debian.sources
     if [ "${DEB_SRC}" = "true" ]; then
         echo "deb-src ${security_url} ${security_suite} ${components}"
     fi
-} > "$list"
+} > "/etc/apt/sources.list"
 
 echo "Done!"
