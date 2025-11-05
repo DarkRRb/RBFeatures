@@ -1,7 +1,7 @@
 {
     "name": "Debian APT mirror",
     "id": "debian-apt-mirror",
-    "version": "0.0.14",
+    "version": "1.0.0",
     "description": "Modify the source of Debian's APT",
     "options": {
         "https": {
