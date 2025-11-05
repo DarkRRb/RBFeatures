@@ -49,7 +49,7 @@ security_url="${schema}://${security_host}/debian-security"
 security_suite="${VERSION_CODENAME}-security"
 
 rm -rf /etc/apt/sources.list.d/debian.sources
-touch -p "/etc/apt/sources.list"
+touch "/etc/apt/sources.list"
 
 {
     echo "deb ${mirror} ${VERSION_CODENAME} ${components}"
