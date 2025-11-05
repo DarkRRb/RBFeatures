@@ -1,0 +1,28 @@
+{
+    "name": "Debian APT mirror",
+    "id": "debian-apt-mirror",
+    "version": "0.0.1",
+    "description": "Modify the source of Debian's APT",
+    "options": {
+        "https": {
+            "type": "boolean",
+            "default": false,
+            "description": "Whether to use https"
+        },
+        "host": {
+            "type": "string",
+            "default": "deb.debian.org",
+            "description": "The host of the source"
+        },
+        "path": {
+            "type": "string",
+            "default": "/debian",
+            "description": "The path of the source"
+        },
+        "security": {
+            "type": "boolean",
+            "default": false,
+            "description": "Whether to overwrite the security source"
+        }
+    }
+}
