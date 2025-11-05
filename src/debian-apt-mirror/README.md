@@ -1,15 +1,13 @@
 
-# My Favorite Color (color)
+# Debian APT mirror (debian-apt-mirror)
 
-A feature to remind you of your favorite color
+Modify the source of Debian's APT
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature-starter/color:1": {
-        "version": "latest"
-    }
+    "ghcr.io/DarkRRb/RBFeatures/debian-apt-mirror:0": {}
 }
 ```
 
@@ -17,10 +15,13 @@ A feature to remind you of your favorite color
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| favorite | Choose your favorite color. | string | red |
+| https | Whether to use https | boolean | false |
+| host | The host of the source | string | deb.debian.org |
+| path | The path of the source | string | /debian |
+| security | Whether to overwrite the security source | boolean | false |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/feature-starter/blob/main/src/color/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/DarkRRb/RBFeatures/blob/main/src/debian-apt-mirror/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
